@@ -1,2 +1,5 @@
 node_modules
 assets/js/**/*.js
+assets/js/**/*.js.map
+assets/js/**/*.d.ts
+assets/js/**/*.d.ts.map
