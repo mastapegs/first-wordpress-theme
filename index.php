@@ -2,9 +2,30 @@
 
 <h1>Hello, World!</h1>
 <p>This is my FIRST theme!!!</p>
+
+<hr/>
+
+<p>This list below is filled with client-side JavaScript</p>
 <ul id="test-ul"></ul>
 
-<br/>
+<hr/>
+
+<p>The list below is rendered with server-side PHP</p>
+<ul>
+    <?php 
+        $listItems = array(
+            "First SSR'd li",
+            "Second SSR'd li",
+            "Third SSR'd li",
+            "Fourth SSR'd li",
+        );
+        foreach ($listItems as $item) {
+            echo "<li>$item</li>";
+        }
+    ?>
+</ul>
+
+<hr/>
 
 <p>Custom Element below</p>
 

@@ -9,7 +9,7 @@ const numbers = [
     'Everything else was SSR.',
     '',
     'WHOOOO!!!!',
-    '⚡',
+    '⚡⚡⚡⚡',
 ];
 ul.innerHTML = `
     ${numbers.map((li) => `<li>${li}</li>`).join('')}
