@@ -20,5 +20,8 @@
   "homepage": "https://github.com/mastapegs/first-wordpress-theme#readme",
   "devDependencies": {
     "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "lit": "^2.1.1"
   }
 }
