@@ -13,7 +13,7 @@
    input: 'assets/js/custom-element.js',
    output: {
      file: 'dist/custom-element.js',
-     format: 'esm',
+     format: 'iife',
    },
    onwarn(warning) {
      if (warning.code !== 'THIS_IS_UNDEFINED') {
