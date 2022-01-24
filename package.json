@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc --watch",
+    "watch:tsc": "tsc --watch",
+    "watch:rollup": "rollup --config rollup.config.js --watch",
+    "dev": "concurrently npm:watch:*",
     "rollup": "rollup --config rollup.config.js",
     "build": "tsc && npm run rollup"
   },
@@ -21,6 +24,7 @@
   },
   "homepage": "https://github.com/mastapegs/first-wordpress-theme#readme",
   "devDependencies": {
+    "concurrently": "^7.0.0",
     "rollup": "^2.66.0",
     "typescript": "^4.5.5"
   },
