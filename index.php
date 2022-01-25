@@ -19,10 +19,11 @@
             "Third SSR'd li",
             "Fourth SSR'd li",
         );
-        foreach ($listItems as $item) {
-            echo "<li>$item</li>";
-        }
     ?>
+        <?php foreach ($listItems as $item) : ?>
+            <li><?=$item?></li>
+        <?php endforeach ?>
+        
 </ul>
 
 <hr/>
@@ -32,5 +33,15 @@
 <custom-element>
     <p>This slotted paragraph is server-side rendered via php, a child of the custom-element. Great for SEO!!!</p>
 </custom-element>
+
+<form method="post">
+    <label for="name">Name: </label>
+    <input id="name" type="text" name="name" />
+    <button>Submit</button>
+</form>
+
+<?php if ($_POST["name"]) : ?>
+    <p><?= $_POST["name"] ?></p>
+<?php endif ?>
 
 <?php get_footer(); 
